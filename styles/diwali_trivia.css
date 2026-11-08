@@ -843,3 +843,32 @@ body.modal-open {
         font-size: 1.6rem;
     }
 }
+
+/* ----- Intro page author credit ----- */
+.intro-author {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(0.85rem, 1.1vw, 1rem);
+    color: rgba(255, 245, 220, 0.55);
+    letter-spacing: 0.3px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.intro-author a {
+    color: rgba(255, 215, 0, 0.85);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.intro-author a:hover {
+    color: var(--gold);
+    border-bottom-color: rgba(255, 215, 0, 0.6);
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+}
